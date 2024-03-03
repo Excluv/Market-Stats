@@ -1,0 +1,256 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    border-top: 1px solid #212A3E;
+    border-bottom: 1px solid #212A3E;
+}
+
+nav {
+    background-color: #fff;
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+/* End header */
+
+/* Main */
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: calc(100vh - 320px);
+    background-color: #f2f2f2;
+    font-size: 0.85rem;
+}
+
+main > div {
+    max-width: 95%;
+}
+
+h3 {
+    margin: 2rem 0;
+}
+
+table {
+    text-align: center;
+    white-space: nowrap;
+}
+
+td {
+    word-break: keep-all;
+}
+
+tbody tr {
+    height: 78px;
+}
+
+tbody {
+    line-height: 60px;
+}
+
+th:first-child {
+    width: 2%;
+}
+
+th:nth-child(2) {
+    width: 6%;
+}
+
+th:not(
+:nth-child(1),
+:nth-child(2),  
+:nth-child(13)) {
+    width: 7%;
+}
+
+td:last-child {
+    display: flex;
+    justify-content: center;
+}
+/* End main */
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #212A3E;
+    color: #fff;
+}
+/* End footer */
+
+.row {
+    padding: 2rem 0;
+}
+
+/* Header */
+.logo,
+.btn-light {
+    background-color: #212A3E;
+    color: white;
+}
+
+.logo {
+    float: left;
+    height: 54px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.logo a{
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    inline-size: 75px;
+    word-wrap: break-word;
+}
+
+.dropdown-menu {
+    right:0;
+}
+/* End header */
+
+/* Main */
+.container {
+    background-color: #fff;
+    border: 2px solid rgba(153, 153, 153, 0.5);
+    border-radius: 6px;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.filter {
+    position: relative;
+}
+
+.filter-box {
+    background: #fff;
+    min-width: 370px;
+    border: 2px solid #212A3E;
+    border-radius: 6px;
+    position: absolute;
+    right: 8px;
+    display: none;
+    z-index: 1;
+}
+
+.box-head {
+    background-color: #f2f2f2;
+    height: 28px;
+    border-bottom: 2px solid #212A3E;
+    border-radius: 6px 6px 0 0;
+}
+
+.box-body {
+    font-size: 0.8rem;
+}
+
+.title {
+    width: 3rem;
+    font-weight: bold;
+    margin-left: 10px;
+    line-height: 28px;
+}
+
+.content {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.metric input,
+.metric label {
+    line-height: 1.8rem;
+    vertical-align: middle;
+}
+
+.date-range {
+    margin-bottom: 0.5rem;
+}
+
+.date-range > label {
+    width: 2rem;
+}
+
+.date-range > input {
+    border: 1px solid #999;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.content:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div,
+.btn-primary,
+.container .btn-light {
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border: none;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #212A3E;
+}
+
+.caret {
+    content: url("../assets/caret-up.svg");
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.percentage::after {
+    content: "%";
+}
+
+.pagination {
+    justify-content: end;
+}
+
+.active {
+    z-index: 5;
+}
+/* End main */
+
+/* Footer */
+.list-group-item:first-child {
+    background-color: #212A3E;
+    color: #fff;
+}
+
+footer .p-2:first-child {
+    display: flex;
+}
+
+footer .p-2:first-child a {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    line-height: 2rem;
+    inline-size: 7rem;
+}
+/* End footer */

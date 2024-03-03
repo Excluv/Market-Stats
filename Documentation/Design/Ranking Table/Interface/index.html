@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">Market Statistics</a>
+        </div>
+        <nav class="d-flex flex-row justify-content-between align-items-center">
+            <div class="p-2 px-3"><a href="">Home</a></div>
+            <div class="p-2 px-3"><a href="">Economic Calendar</a></div>
+            <div class="p-2 px-3 me-auto"><a href="">Analysis</a></div>
+            <div class="p-2">
+                <form action="" class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="p-2 px-3">
+                <div class="dropdown me-2">
+                    <button class="btn btn-light dropdown-toggle">
+                        Login
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        <li><a class="dropdown-item" href="#">Register</a></li>
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <h3>Market Update:</h3>
+                <h5>Investment Vehicle Rankings</h5>
+                <div class="container">
+                    <div class="d-flex flex-row align-items-center toolbar">
+                        <div class="p-2">Market |</div>
+                        <div class="p-2">
+                            <button class="btn btn-primary">
+                                All
+                            </button>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn btn-primary">
+                                Stock
+                            </button>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn btn-primary">
+                                Fixed Income
+                            </button>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn btn-primary">
+                                Commodity
+                            </button>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn btn-primary">
+                                Crypto
+                            </button>
+                        </div>
+                        <div class="me-auto p-2">
+                            <button class="btn btn-primary">
+                                FX
+                            </button>
+                        </div>
+                        <div class="p-2">Show rows</div>
+                        <div class="p-2">
+                            <form action="">
+                                <select name="" id="">
+                                    <option value="">5</option>
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">50</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="p-2 filter">
+                            <button class="btn btn-light dropdown-toggle filter-button">
+                                Filter
+                            </button>
+                            <div class="filter-box">
+                                <div class="box-head">
+                                    <div class="title">Filter</div>
+                                </div>
+                                <div class="box-body">
+                                    <form action="">
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="title">Metrics</div>
+                                            <div class="content">
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="marketcap">
+                                                    <label for="marketcap">Market Capitalization</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="downsidevol">
+                                                    <label for="downsidevol">Downside Volatility</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="losingodds">
+                                                    <label for="losingodds">Losing Odds</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="betameas">
+                                                    <label for="betameas">Beta Measure</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="rsquared">
+                                                    <label for="rsquared">R-Squared</label>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="avglogreturn">
+                                                    <label for="avglogreturn">Avg. Log Return</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="sharpe">
+                                                    <label for="sharpe">Sharpe Ratio</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="alphameas">
+                                                    <label for="alphameas">Alpha Measure</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="profitodds">
+                                                    <label for="profitodds">Profitability Odds</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="riskmeas">
+                                                    <label for="riskmeas">Risk Measurement</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="title">Period</div>
+                                            <div class="content">
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="daily">
+                                                    <label for="daily">D</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="weekly">
+                                                    <label for="weekly">W</label>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="monthly">
+                                                    <label for="monthly">M</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="annual">
+                                                    <label for="annual">Y</label>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="twoyears">
+                                                    <label for="twoyears">2Y</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="fiveyears">
+                                                    <label for="fiveyears">5Y</label>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="tenyears">
+                                                    <label for="tenyears">10Y</label>
+                                                </div>
+                                                <div class="metric">
+                                                    <input type="checkbox" name="" id="all">
+                                                    <label for="all">All</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="title">Range</div>
+                                            <div class="content">
+                                                <div class="metric date-range">
+                                                    <label for="from">From</label>
+                                                    <input type="date" name="" id="from">
+                                                </div>
+                                                <div class="metric date-range">
+                                                    <label for="to">To</label>
+                                                    <input type="date" name="" id="to">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="title">Action</div>
+                                            <div class="content">
+                                                <button type="submit" class="btn btn-light">Submit</button>
+                                            </div>
+                                            <div class="content">
+                                                <button type="" class="btn btn-light">Reset</button>
+                                            </div>
+                                            <div class="content">
+                                                <button type="" class="btn btn-light">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Value</th>
+                                <th scope="col">D. Change</th>
+                                <th scope="col">%D</th>
+                                <th scope="col">%W</th>
+                                <th scope="col">%M</th>
+                                <th scope="col">%Y</th>
+                                <th scope="col">Profit. Odds</th>
+                                <th scope="col">Risk</th>
+                                <th scope="col">Indicator</th>
+                                <th scope="col">Last 12 Months</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Stock Index</td>
+                                <td>S&P 500</td>
+                                <td class="number">
+                                    <span class="caret"></span>
+                                    4,742.43
+                                </td>
+                                <td class="number">
+                                    <span class="caret"></span>
+                                    16.8
+                                </td>
+                                <td class="percentage">
+                                    <span class="caret"></span>
+                                    -0.68
+                                </td>
+                                <td class="percentage">
+                                    <span class="caret"></span>
+                                    -1.18
+                                </td>
+                                <td class="percentage">
+                                    <span class="caret"></span>
+                                    3.41
+                                </td>
+                                <td class="percentage">
+                                    <span class="caret"></span>
+                                    22.64
+                                </td>
+                                <td>N.A</td>
+                                <td>N.A</td>
+                                <td>N.A</td>
+                                <td>
+                                    <div class="tradingview-widget-container">
+                                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                            {
+                                                "symbols": [
+                                                [
+                                                    "VANTAGE:SP500|1D"                                                ]
+                                                ],
+                                                "chartOnly": true,
+                                                "width": "300",
+                                                "height": "60",
+                                                "locale": "en",
+                                                "colorTheme": "light",
+                                                "autosize": false,
+                                                "showVolume": false,
+                                                "showMA": false,
+                                                "hideDateRanges": true,
+                                                "hideMarketStatus": false,
+                                                "hideSymbolLogo": true,
+                                                "scalePosition": "left",
+                                                "scaleMode": "Normal",
+                                                "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                                "fontSize": "8",
+                                                "noTimeScale": true,
+                                                "valuesTracking": "1",
+                                                "changeMode": "price-and-percent",
+                                                "chartType": "area",
+                                                "maLineColor": "#2962FF",
+                                                "maLineWidth": 1,
+                                                "maLength": 9,
+                                                "lineWidth": 2,
+                                                "lineType": 0,
+                                                "dateRanges": [
+                                                "12m|1D"
+                                                ]
+                                            }
+                                        </script>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <span class="page-link">Previous</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <span class="page-link" href="#">
+                                2
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <a href="#top">Market Statistics</a>
+                </div>
+                <div class="p-2">
+                    <ul class="list-group">
+                        <li class="list-group-item"><h5>Sitemap</h5></li>
+                        <li class="list-group-item"><a href="">Home</a></li>
+                        <li class="list-group-item"><a href="">Economic Calendar</a></li>
+                        <li class="list-group-item"><a href="">Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="p-2">
+                    <ul class="list-group">
+                        <li class="list-group-item"><h5>About</h5></li>
+                        <li class="list-group-item"><a href="">Our Team</a></li>
+                        <li class="list-group-item"><a href="">Analysis Metrics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>Something</p>
+        </div>
+    </footer>
+</body>
+</html>
