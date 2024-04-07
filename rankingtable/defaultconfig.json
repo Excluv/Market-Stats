@@ -1,0 +1,6 @@
+{
+  "db_directory": "db.sqlite3",
+  "start_date": "2024-01-01",
+  "metrics": ["expected_return", "volatility", "updown_ratio"],
+  "periods": ["d", "w", "m", "y"]
+}

@@ -1,0 +1,3 @@
+In package.json
+"react-tradingview-widget": "^1.3.2",
+"react-ts-tradingview-widgets": "^1.2.3"

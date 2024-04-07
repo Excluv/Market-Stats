@@ -1,0 +1,46 @@
+{
+  "db_directory": "db.sqlite3",
+  "start_date": "2010-01-01",
+  "end_date": "2030-01-01",
+  "sector_mapping": {
+    "Consumer Survey": {
+      "price_mixed_set":
+        ["Consumer Inflation Expectation", "Consumer Sentiment"]
+    },
+    "Employment":  {
+      "price_mixed_set":
+        ["Total Nonfarm Employees", "Unemployment Rate"],
+      "news_mixed_set_1":
+        ["Initial Unemployment Claims", "Total Nonfarm Employees", "Unemployment Rate"]
+    },
+    "Growth": {
+      "price_mixed_set":
+        ["Real GDP", "Personal Saving", "Real Disposable Personal Income"],
+      "news_mixed_set_1":
+        ["Advance Core Retail Sales", "Real PCE", "Real Disposable Personal Income", "Personal Saving"],
+      "news_mixed_set_2":
+        [
+          "Real GDP", "Industrial Production", "Total Business Inventories",
+          "Merchant Wholesalers Inventories", "Manufacturers' New Orders Total Manufacturing"
+        ],
+      "news_mixed_set_3":
+        ["Real GDP", "Advance Retail Sales", "Manufacturers' New Orders Durable Goods", "Real PCE"]
+    },
+    "Inflation": {
+      "price_mixed_set":
+        ["Core PCE Price Index", "Core CPI", "Average Hourly Earnings"],
+      "news_mixed_set_1":
+        ["CPI", "Core CPI", "Core PCE Price Index"],
+      "news_mixed_set_2":
+        ["PPI by Industry Total Retail Trade Industries", "Core PPI by Commodity Final Demand"]
+    },
+    "Money and Interest Rate": {
+      "price_mixed_set":
+        ["FFR", "M2SL"],
+      "news_mixed_set_1":
+        ["FFR", "FFR Proj."],
+      "news_mixed_set_2":
+        ["Median FFR Proj."]
+    }
+  }
+}
