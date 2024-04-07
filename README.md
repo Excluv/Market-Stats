@@ -20,7 +20,7 @@ Next, refer to the file frontend/package.json to see all ReactJS dependencies an
 ```
 npm install
 ```
-to collect the required packages to run the project.
+to collect the required packages.
 
 ## Launch
 You'd need to run two local servers on different ports, one for the back-end (port 8000 for Django), and the other for the front-end (port 3000 for ReactJS).
