@@ -37,3 +37,12 @@ Note: In case you want to change the port of the front-end server, please change
 ```
 CORS_ALLOWED_ORIGIN = ["http://localhost:port_number"]
 ```
+and also in frontend/package.json, find "scripts" and change:
+```
+... other configs
+scripts: {
+  "dev": "vite --open --port port_numer",
+  ... other configs
+},
+... other configs
+```
