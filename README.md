@@ -1,7 +1,7 @@
 # Market Statistics
 A Django for back-end and React for front-end web project built to aid investors/traders in:
 * Tracking the performance of various investment products.
-* Tracking economics conditions with respect to investment product values using various statistical techniquess.
+* Tracking economics conditions with respect to investment product values using various statistical techniques.
 * Setting up a customized dashboard of analysis metrics.
 
 ## Technology
